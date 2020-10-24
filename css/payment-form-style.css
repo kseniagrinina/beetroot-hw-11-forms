@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.form-container {
+  margin: 100px auto;
+  max-width: 336px;
+}
+
+.form-header {
+  padding: 15px 23px;
+  background-color: #f8edaf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-header-left h2 {
+  color: #6e7f7b;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.form-header-left p {
+  color: #a6a28d;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+}
+
+.form-header-right {
+  color: #637570;
+  font-size: 36px;
+  letter-spacing: -1.8px;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 45px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  color: #9eabad;
+  font-size: 13px;
+  margin-bottom: 9px;
+}
+
+input,
+select {
+  font-family: 'Montserrat', sans-serif;
+  border: 2px solid #bac8cb;
+  padding: 10px;
+  color: #727f82;
+  font-size: 13px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border: 2px solid #82d4e7;
+}
+
+.date-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 26px;
+}
+
+.cvv-row {
+  display: flex;
+  align-items: center;
+}
+
+input[type=password] {
+  width: 40%;
+}
+
+.cvv-row div {
+  color: #9eabad;
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+.cvv-row div a:link,
+.cvv-row div a:visited {
+  color: #9eabad;
+  text-decoration: none;
+  border-bottom: 1px solid #e4eaea;
+}
+
+.cvv-row div a:hover,
+.cvv-row div a:active {
+  border-bottom: 1px solid transparent;
+}
+
+
+hr {
+  margin-bottom: 30px;
+  height: 1px;
+  border: none;
+  background-color: #edf0f1;
+}
+
+button {
+  background-color: #25b86a;
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  padding: 13px 125px;
+}
+
+button:hover,
+button:active {
+  background-color: #82d4e7;
+  outline: none;
+}
+
+button + a:link,
+button + a:visited {
+  font-size: 12px;
+  margin: auto;
+  position: relative;
+  text-decoration: none;
+  margin-top: 22px;
+  color: #9eabad;
+  border-bottom: 1px solid #e4eaea;
+  padding-bottom: 2px;
+}
+
+button + a:hover,
+button + a:active {
+  border-bottom: 1px solid transparent;
+}

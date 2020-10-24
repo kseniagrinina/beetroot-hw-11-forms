@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.1s ease-in;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #E5EEEE;
+}
+
+.container {
+    margin: 100px auto;
+    max-height: 500px;
+    max-width: 400px;
+    background-image: url(../img/sign-in-form-bckgd.png), linear-gradient(32deg, rgb(48, 35, 174) 0%, rgb(200, 109, 215) 100%);
+    background-size: cover;
+}
+
+.container {
+    padding: 50px 70px;
+}
+
+.navigation {
+    margin-bottom: 50px;
+}
+
+.navigation a:link,
+.navigation a:visited {
+    text-decoration: none;
+    color: #e1c2f1;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 25px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    border-bottom: 2px solid #e66a64;
+    color: #fbf6e4;
+}
+
+.form-div {
+    position: relative;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+input[type=text],
+input[type=password],
+.submit-button {
+    width: 100%;
+    padding: 10px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+.submit-button:focus {
+    outline: none;
+    border: 2px solid #23ae92;
+} 
+
+input[type=text],
+input[type=password] {
+    margin: 8px 0 18px 0;
+    background: none;
+    border: 2px solid rgba(191, 185, 204, 0.54);
+    color: #fbf6e4;
+    font-size: 18px;
+}
+
+input[type=password] {
+    margin-bottom: 0;
+}
+
+label {
+    color: #fbf6e4;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+label:last-of-type {
+    font-size: 13px;
+}
+
+.form-error {
+    color: #ff0000;
+    font-size: 12px;
+    visibility: hidden;
+}
+
+input:invalid + .form-error {
+    visibility: visible;
+}
+
+[type=checkbox] {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+}
+
+[type=checkbox]:checked+label .form-checkbox {
+    font-size: 12px;
+}
+
+[type=checkbox]:focus+label .form-checkbox {
+    border: 2px solid #e66a64;
+}
+
+.form-checkbox {
+    width: 16px;
+    height: 16px;
+    background-color: #23ae92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    font-size: 0;
+    border: 2px solid #23ae92;
+    transition: ease .3s font-size;
+}
+
+.checkbox-label {
+    display: flex;
+}
+
+.submit-button {
+    padding: 8px;
+    background-color: #23ae92;
+    border: 2px solid #23ae92;
+    font-family: Quicksand;
+    color: #fbf6e4;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.submit-button:hover,
+.submit-button:active {
+    background-color: #e66a64;
+}
+
+.bottom-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-links a {
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    padding-bottom: 3px;
+    color: #b9b9cc;
+    border-bottom: 1px solid #b9b9cc;
+}
+
+.bottom-links a:hover {
+border-bottom: transparent;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/payment-form-style.css" <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <title>Payment form</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <div class="form-header-left">
+                <h2>
+                    Harold Finch
+                </h2>
+                <p>
+                    Your Total
+                </p>
+            </div>
+            <div class="form-header-right">
+                $88
+            </div>
+        </div>
+
+        <form action="" method="GET">
+            <div class="form-row">
+                <label for="card-number">Credit card number</label>
+                <input type="text" name="card-number" id="card-number" data-mask="0000 0000 0000 0000">
+            </div>
+
+            <div class="form-row">
+
+                <label for="month">Expiration date</label>
+
+                <div class="date-row">
+                    <select name="month" id="month" class="select-month" required>
+                        <option value="" selected="selected" hidden="">Month</option>
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="cctober">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                    </select>
+
+                    <select name="year" id="year" class="select-year" required>
+                        <option value="" selected="selected" hidden="">Year</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="cvv">CVV</label>
+
+                <div class="cvv-row">
+                    <input type="password" name="cvv" id="cvv" maxlength="3" minlength="3">
+                    <div>
+                        3 digits &mdash; <a href="#">view example</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <button type="submit">Pay</button>
+            <a href="#">Cancel order</a>
+        </form>
+
+        <div class="form-body">
+
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./plugins/jquery.mask.min.js"></script>
+</body>
+
+</html>
